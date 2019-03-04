@@ -1,0 +1,16 @@
+body{
+  background-color: rgb(121, 206, 170);
+}
+
+h2 {
+  text-align: center;
+  padding: 2%;
+}
+button {
+  background-color: rgb(41, 88, 100) !important;
+  
+}
+
+th:first-child {
+  width: 80%;
+}
