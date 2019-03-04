@@ -2,7 +2,10 @@
 import React from 'react';
 import axios from 'axios';
 
-let apiKey ="YOUR API KEY HERE";
+// Store your personal API Key below.
+// Search WeatherInfo for your preferred City. 
+
+let apiKey = "INSERT YOUR APIKEY HERE";
 let city = 'Helsinki';
 let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
 
@@ -21,9 +24,7 @@ export default class WeatherClient extends React.Component {
         this.setState({data: this.state.data.concat(response)})  
         console.log(response.weather[0])
         console.log(this.state.data)
-      }
-      )
-  }
+      })}
 
   render() {
     const data = this.state.data.map(s=>

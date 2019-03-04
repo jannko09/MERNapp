@@ -5,9 +5,12 @@ const getQuotes = () => {
 return MongoClient.connect(url)
 .then(function( db) {
     //if (err) throw err;
+    //Connect to MongoDB database
     var dbo = db.db("messageboard");
+    // Find collection formula1
     return dbo.collection("formula1")
          .find({})
+         //Sort by time
          .sort({createdAt: -1})
          .toArray()
          .then(function(result) {

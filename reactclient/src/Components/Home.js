@@ -24,17 +24,17 @@ export default class Home extends Component {
     getComments(myJson =>
       this.setState({ data: myJson }))
   }
-
+  
   render() {
     const subjects = this.state.data;
-    // console.log(subjects)
 
     return (
       <div className="Home">
       <Navibar />
       
         <Container>
-          <h2>Welcome to Acme message board.
+          <h2>Welcome to Academy Mini Project <br/>
+          &#9658; Week 8 MERNapp 
           </h2>
         </Container>
         <Subjects comment={subjects} />

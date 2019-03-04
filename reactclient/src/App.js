@@ -14,15 +14,16 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <header className="App-header">
-            {/* <h1>Keskustelufoorumi</h1> */}
-            
+          <header className="App-header">       
           </header>
           <div>
             <Switch>
               <Route exact path="/" component={LogIn} />
               <Route path="/signup" component={SignUp} />
+
+              {/*ON SUCCESFUL AUTH REDIRECT TO HOME COMPONENT*/}
               <Route path="/home" component={withAuth (Home)} />
+              
               <Route path="/contact" component={Contact} />
               <Route path="/logout" component={Goo} />
               <Route component={NotFound} />

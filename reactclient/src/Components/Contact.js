@@ -13,7 +13,6 @@ export default class Contact extends Component {
           <p><span><img src={logo2} className="App-logo" alt="logo" width="64" /></span>Maria</p>
           <p>050-1234567, maria@malli.fi</p>
           <hr></hr>
-
           <p><span><img src={logo1} className="App-logo" alt="logo"  width="64"/></span>Janne</p>
           <p>050-1234567, janne@malli.fi</p>
           <hr></hr>
